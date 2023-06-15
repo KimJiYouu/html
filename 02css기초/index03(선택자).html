@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* 모든 태그 적용 */
+        *{/* color:red; */}
+
+        /* 특정태그 적용 */
+        b{color:red;}
+
+        /* 여러 특정태그 적용 : ul과 li 둘다 선택*/
+        ul, li{list-style: none;}
+    
+        #a1{color:cadetblue;}
+        .a1{color:chocolate;}
+    </style>
+</head>
+<body>
+    <b>태그</b>
+    <b>태그</b>
+
+    <ul>
+        <li>태그</li>
+    </ul>
+    <!-- id는 화면에서 고유하다 -->
+    <p id="a1">태그</p>
+    <!-- 클래스는 중복이름이 선언된다. -->
+    <p class="a1">태그</p>
+
+
+
+    <style>
+        /* box클래스 안의 자식들 중 모든 p태그에 적용 */
+        .box p {color:darkmagenta;}
+
+        /* box클래스 안의 직계자식들 중 p태그에 적용 */
+        .box > p {color:deeppink;}
+    </style>
+
+
+
+    <div class="box">
+        
+        <p>직계자식</p>
+        <p>직계자식</p>
+        <div>
+            <p>자식</p>
+        </div>
+
+    </div>
+
+    <style>
+        /* input 태그의 text타입 속성에 적용 */
+        input[type='text'] {color:forestgreen}
+    </style>
+
+    <input type="text">
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .a1{border: 1px solid #777;
+            text-align: right; 
+            letter-spacing: 10px;}
+    a{text-decoration: none; color: rgb(191, 194, 0);}
+    </style>
+
+</head>
+<body>
+    <p class="a1">
+        안녕하세요
+    </p>
+
+    <style>
+        /* 비교대상이 있어야 하고 기준이 되는 대상에 선언 */
+        p{border:1px solid #777;}
+        p > img{vertical-align:middle;}
+    </style>
+    <a href="">텍스트데코레이션</a>
+
+    <p>
+        <img src="img/css3.jpg" alt="">문단 수직정렬
+    </p>
+
+
+    <!-- 한줄일 경우 높이와 줄간격을 동일하게 맞추면 수직정렬된다. -->
+    <style>
+        .a2{height:100px; 
+            line-height: 100px;
+            border:1px solid #777;}
+    </style>
+    <div class="a2">
+        한줄 수직정렬<br> <!-- 한줄만 가능 -->
+    </div>
+
+</body>
+</html>
