@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{padding: 0; margin: 0;}
+        .box{width: 800px;
+            margin: 0 auto;
+            border: 1px solid #777;
+            box-sizing: border-box;
+            
+
+        }
+        .img{
+            position: absolute;
+            left: 5px;
+            top: 5px;
+        }
+        .img img{
+            width: 80px;
+        }
+        .content{
+            padding: 0;
+            margin: 0;
+            width: 750px;
+                margin-top: 10px;
+                margin-left: 100px; 
+                margin-bottom: 10px;
+                overflow: hidden;
+                box-sizing: border-box;
+        }
+        .content textarea{
+            box-sizing: border-box;
+            width: 90%;
+            height: 300px;
+            resize: none; /* area 마우스로 크기 조절 금지 */
+            resize: vertical; min-height: 100px; /* area 최소크기 100px */
+        }
+        .ttt{
+            float: left;
+            width: 300px;
+            overflow: hidden;
+        }
+        .tt{
+            float: left;
+        }
+        
+        .content button{
+          float: right;
+            
+        }
+        .content .ttt input:nth-child(2) {margin-top: 3px;} /* 특정 태그의 인덱스를 지정해서 선택 */
+
+    </style>
+
+</head>
+<body>
+    <div class="box" style="position: relative;">
+
+        <div class="img">
+            <img src="bgimg.png" alt="d">
+        </div>
+        <div class="content">
+
+            <textarea class="text">힌트: 이미지 영역을 </textarea>
+            
+            <div class="ttt">
+                <input class="tt" stype="text">
+            
+                <input class="tt" type="text">
+            </div>
+            
+            <button class="btn">등록하기</button>
+            
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,192 @@
+/* header */
+header {border-bottom: 1px solid #777; padding-bottom: 7px;}
+header .top-head {
+    border-top: 4px solid rgb(5, 136, 5);
+    border-bottom: 1px solid #777; 
+    overflow: hidden;
+    padding: 5px;
+    height: 29px;
+}
+header .top-head .middle {
+    width: 1008px;
+    margin: 0 auto;
+}
+header .top-head .ticket {
+    float: left; 
+    margin-top: 4px;
+    margin-bottom: 4px;
+    font-size: 12px;
+    color: #9e9c9c;
+} 
+header .top-head .top-list{
+    
+    margin-top: 5px;
+}
+header .top-head .top-list ul li a{
+    float: right;
+    margin-right: 7px;
+    text-decoration: none;
+    color: #474747;
+    font-size: 13px;
+    
+}
+header .mid-head {
+    width: 1008px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+header .mid-head .logo {
+    float: left;
+}
+header .mid-head .search {
+   
+    background-image: url('img_melon/melon_search.png');
+    float: left;
+    width: 330px;
+    height: 40px;
+    margin-top: 36px;
+    margin-left: 11px;
+   border: none;
+   background-repeat: no-repeat;
+   overflow: hidden;
+}
+header .mid-head .search input {
+    float: left;
+    width: 260px;
+    height: 25px;
+    margin-left: 18px;
+    margin-top: 6px;
+}
+header .mid-head .search button {
+    float: right;
+    height: 40px;
+    width: 45px;
+    background-image: url('img_melon/melon_btn.png');
+    background-color: white;
+    border: none;
+}
+
+header .mid-head .rightlogo{
+    position: absolute;
+    top: 10px;
+    right: -10px;  
+}
+
+
+header .und-head {
+    width: 1008px;
+    margin: 0 auto;
+    margin-top: -15px;
+    overflow: hidden;
+    
+}
+header .und-head .leftlist {
+    margin-bottom: 10px;
+}
+header .und-head .leftlist li {
+    float: left;
+    margin: 15px;
+}
+
+header .und-head .leftlist li a {
+    text-decoration: none;
+    color: black;
+}
+header .und-head .rightlist li {
+    float: right;
+    padding-top: 7px;
+    
+}
+header .und-head .rightlist li a {
+    text-decoration: none;
+    color: black;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+section .wrap{width: 1008px; margin: 0 auto; padding-top: 30px;}
+
+section .content {overflow: hidden;}
+section .list-wrap{width: 480px; float: left;}
+section .slide-wrap{width: 236px; float: left;}
+section .user-wrap{width: 280px; float: left;}
+
+.list-wrap ul {overflow: hidden;}
+.list-wrap ul li {float: left; width: 33.3333%; position: relative;} 
+
+/* 이미지의 가수명 영역 */
+.list-wrap ul li a {position: relative;}
+.list-wrap ul li a .singer {
+    position: absolute;
+    left: 0;
+    bottom: 4px;
+    width: 100%;
+    text-align: center;
+    font-size: 13px;
+    height: 22px;
+    line-height: 22px;
+    color: white;
+    background-color: black;
+    opacity: 0.8; /* 1을 기준으로 한 투명도 */
+}
+.list-wrap ul li .hover-cont {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 155px;
+    height: 155px;
+    background-color: black;
+    opacity: 0; /* 호버가 닿으면 1로 변경 */
+    z-index: 10; /* 가장 위쪽 */
+
+    transition: opacity .5s ease-in-out; /* 서서히 이미지 변경 */
+
+}
+.list-wrap ul li .hover-cont a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    
+    display: inline-block;
+    padding-top: 50px;
+    width: 100%;
+    text-align: center;
+    
+}
+
+/* 호버 */
+.list-wrap ul li:hover > .hover-cont {
+    opacity: 1;
+}
+
+.slide-wrap {margin-left: 4px;}
+.user-wrap{margin-left: 8px; height: 118px;}
+.user-wrap > .login-wrap {
+    border: 1px solid #777;
+}
+.user-wrap > .promotion-wrap {
+    margin-top: 8px;
+}
