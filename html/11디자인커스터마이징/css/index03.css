@@ -1,0 +1,108 @@
+/*========상품 상세========
+=======================*/
+
+.detail-info {
+margin-bottom: 120px; /*맨마지막에 확인하고 적용*/
+/*min-height: 345px; 이렇게 줘도 된다 (최대높이)*/
+}
+.detail-info > .title {
+font-size: 24px;
+
+}
+.detail-info > .price {
+border-top: 1px solid #ddd;
+border-bottom: 1px solid #ddd;
+font-size: 30px;
+padding: 10px 0; /*위아래, 좌우*/
+
+}
+.detail-info > .delivery {
+color: #888;
+}
+.detail-control > .price,
+.detail-control > .order {
+overflow: hidden;
+}
+.detail-control .left {
+float: left;
+}
+.detail-control .right {
+float: right;
+}
+
+.detail-control .price .left {
+font-size: 18px;
+line-height: 45px;
+}
+.detail-control .price .right {
+font-size: 30px;
+}
+
+.detail-control .order .left,
+.detail-control .order .right {
+width: 50%;
+height: 60px;
+font-size: 18px;
+}
+/*=======댓글========*/
+.reply-wrap {
+background-color: #f5f5f5;
+padding: 15px;
+border: 1px solid #ddd;
+position: relative; /*부모에 relative*/
+
+}
+.reply-wrap .reply-image {
+    position: absolute; /*자식에서 absolute로 부모요소 위치로 조정*/
+    left: 15px;
+    top: 15px;
+}
+.reply-wrap .reply-content {
+    padding-left:55px;
+}
+/*부트스트랩의 form-control 조정 */
+.reply-content > .form-control {
+    resize: vertical;/*세로로만 조정가능*/
+    width: 100%; /*최대 100%*/
+    min-height: 80px; /*최대 넓이*/
+    margin-bottom: 10px;
+}
+.reply-input > .form-control {
+    width: 200px;
+    margin-bottom: 5px;
+}
+.reply-group {
+    overflow: hidden;
+}
+.reply-input {
+    float: left;
+}
+.reply-group .right {
+    float: right;
+}
+/*댓글 영역*/
+.reply-group small {
+    margin-left: 10px;
+    height: 20px;
+    line-height: 20px;
+}
+.reply-group small, 
+.reply-group strong {
+    float : left;
+}   
+.reply-group a {
+    text-decoration: none;
+    color: #777;
+    float: right;
+}      
+
+/*서서히 보이기 */
+.reply-content textarea {
+    height: 50px;
+    transition: height .4s ease-in-out;
+    
+}
+.reply-content textarea:focus {
+    height: 150px;
+
+}

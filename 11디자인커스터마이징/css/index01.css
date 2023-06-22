@@ -1,34 +1,7 @@
-/* 디자인 시작전에 공통적으로 선언 */
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-body, html{
-    font-family: 'Gothic A1', sans-serif;
-    font-size: 21px;
-}
-img{
-    max-width: 100%;
-    height: auto;
-}
-ul, li, ol, dd, dl {
-    list-style: none;
-}
+@import url('reset.css');
 
-input, textarea, select, button {
-    /* 브라우저 별 기본디자인을 제거해서 동일한 디자인으로 보여질 수 있도록 선언 */
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    /* border:none */
-}
-.form-control {
-    border-radius: 0;
-}
-.btn {
-    border-radius: 0;
-}
+
+
 /* ################# header ####################### */
 .my-header {
     

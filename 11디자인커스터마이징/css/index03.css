@@ -1,0 +1,70 @@
+.top{
+    overflow: hidden;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.top > h2 {
+    display: inline;
+    float: left;
+}
+.top > p {
+    float: left;
+    margin-top: 25px;
+    color: gray;
+}
+.content {
+    overflow: hidden;
+    padding-left: 0;
+    padding-right: 0;
+}
+.content > img {
+    float: left;
+    margin-top: 20px;
+    
+}
+.content > .detail {
+    float: right;
+    padding-right: 0;
+    
+}
+
+.price {
+    border-top: 1px solid #ddd;
+    margin-top: 30px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+.price > h2 {
+    font-weight: 700;
+}
+.deliver {
+    padding-top: 10px;
+}
+.deliver > .free {
+    font-size: 13px;
+    color: gray;
+}
+.total {
+    overflow: hidden;
+    margin-top: 130px;
+}
+.total .totalprice {
+    float: left;
+    font-size: 17px;
+    font-weight: 700;
+    padding-top: 10px;
+}
+.total .zero {
+    float: right;
+    font-size: 30px;
+    font-weight: 1000;
+}
+.buttontap {
+    overflow: hidden;
+    
+}
+.buttontap .btn{
+    float: left;
+    
+}
